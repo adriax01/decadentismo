@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>La pioggia nel pineto</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header>
+    <h1>La pioggia nel pineto</h1>
+    <p>Gabriele D'Annunzio</p>
+</header>
+
+<main class="poesia">
+    <p>
+        Taci. Su le soglie<br>
+        del bosco non odo<br>
+        parole che dici<br>
+        umane; ma odo<br>
+        <span class="parola" onclick="mostraSpiegazione('allitterazione')">
+        parole più nuove
+        </span><br>
+        che parlano gocciole e foglie.
+    </p>
+
+    <p>
+        Ascolta. Piove<br>
+        dalle nuvole sparse.<br>
+        Piove su le <span class="parola" onclick="mostraSpiegazione('sinestesia')">
+        tamerici
+        </span>
+        salmastre ed arse.
+    </p>
+
+<a href="index.html" class="torna">
+    <img src="https://as2.ftcdn.net/v2/jpg/18/61/99/89/1000_F_1861998916_y1MEarNuhUBfRTVR2Vy1a4wL67fzQbky.jpg" alt="Torna alla galleria">
+</a>
+</main>
+
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <span class="chiudi" onclick="chiudiPopup()">×</span>
+        <p id="testoPopup"></p>
+    </div>
+</div>
+
+</body>
+</html>

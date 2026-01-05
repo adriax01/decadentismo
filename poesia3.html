@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Corrispondenze</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header>
+    <h1>Corrispondenze</h1>
+    <p>Charles Baudelaire</p>
+</header>
+
+<main class="poesia">
+    <p>
+        La Natura è un <span class="parola" onclick="mostraSpiegazione('simbolo')">
+        tempio
+        </span> dove pilastri viventi<br>
+        lasciano talvolta uscire confuse parole;<br>
+        l’uomo vi passa attraverso <span class="parola" onclick="mostraSpiegazione('corrispondenze')">
+        foreste di simboli
+        </span><br>
+        che lo osservano con sguardi familiari.
+    </p>
+
+    <p>
+        Come lunghi echi che di lontano<br>
+        si confondono in una profonda e tenebrosa unità,<br>
+        <span class="parola" onclick="mostraSpiegazione('sinestesia')">
+        profumi, colori e suoni
+        </span> si rispondono.
+    </p>
+
+<a href="index.html" class="torna">
+    <img src="https://as2.ftcdn.net/v2/jpg/18/61/99/89/1000_F_1861998916_y1MEarNuhUBfRTVR2Vy1a4wL67fzQbky.jpg" alt="Torna alla galleria">
+</a>
+</main>
+
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <span class="chiudi" onclick="chiudiPopup()">×</span>
+        <p id="testoPopup"></p>
+    </div>
+</div>
+
+</body>
+</html>
